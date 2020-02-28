@@ -1,0 +1,40 @@
+body {
+    background-color: #fff933;
+    font-family: 'Open Sans Condensed', ;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+h2,
+h3,
+p {
+    text-align: center;
+}
+
+.search-container {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#pokemon-containerimg {
+    text-align: center;
+}
+
+
+header {
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 0.125em 0.25em 0.125em #707070;
+    padding: 8rem 4rem;
+}
+
+.caja {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="canvasjs.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Jugando con un Pokedex</h1>
+
+  </header>
+
+  <h2>Búsquemos a tu Pokemón</h2>
+  <p>Ingresa el número o nombre</p>
+
+  <div class="pokedex">
+
+
+    <div class="search-container">
+      <input id="search-box" type="text" placeholder="Ingresa el número o nombre" />
+      <button id="search-button">
+        <i class="material-icons icon search-icon">search</i>
+      </button>
+    </div>
+
+    <container class="caja">
+      <div id="pokemon-containerimg">
+        <img id="pokedex-screen-image" src="" />
+      </div>
+
+      <div id="pokedex-info-container">
+        <h2 id="pokemonName"></h2>
+        <h3 id="pokemonNumber"></h3>
+        <h3 id="pokemonWeight"></h3>
+        <h3 id="pokemonTypes"></h3>
+        <h3 id="pokemonAbbilities"> </h3>
+        <p id="pokemonText"></p>
+      </div>
+    </container>
+
+
+
+    <div id="pokemongrafico"></div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="main2.js"></script>
+
+
+  <footer>
+
+  </footer>
+
+
+
+</body>
+
+</html>
