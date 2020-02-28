@@ -10,6 +10,11 @@ $('#search-button').click(function () {
         success: function (res) {
             console.log(res);
             pokedex(res);
+            var data_types = $('#pokemonTypes');
+            data_types.html('')
+            for (i = 0; i < res.types.length; i++){
+           data_types.append('<h3>Tipo: ' + res.types[i].type.name + '</h3>' )
+            }
             $.ajax({
                 type: "GET",
                 url: res.abilities[0].ability.url,
@@ -20,14 +25,12 @@ $('#search-button').click(function () {
                 }
             })
         },
-        error: function () {
+        error: function ()
+         {
             console.log("No se ha podido obtener la información");
         }
     });
-    var data_types = pokemonTypes;
-    for (i = 0; i < data_types.length; i++){
-data_types[i].label = data_types[i]['types'].name[1];
-    }
+  
 
 });
 
@@ -54,7 +57,6 @@ function pokedex(data) {
     $('#pokemonNumber').text("Número: " + pokemonNumber);
     $('#pokemonWeight').text("Peso: " +
         pokemonWeight);
-    $('#pokemonTypes').text("Tipo: " + pokemonTypes);
     $('#pokemonAbbilities').text("Habilidad: " +
         pokemonAbbilities);
 
